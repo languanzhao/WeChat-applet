@@ -1,0 +1,26 @@
+Page({
+  data:{
+   info:{},
+	 list:{},
+	 wxList:{},
+	 aboutSrc:"",
+	 bool:false,
+	 loadingText:"加载中..."
+  },
+	onLoad:function(){
+		wx.request({
+			url:"https://easy-mock.com/mock/5c3ae8ce1de3741096451235/example/about",
+			success:(res)=>{
+				console.log(res)
+				this.setData({
+					bool:true,
+					aboutSrc:res.data.data.aboutSrc,
+					info:res.data.data.info,
+					list:res.data.data.list,
+					wxList:res.data.data.wxList
+					})
+			}
+		})
+	}
+})
+

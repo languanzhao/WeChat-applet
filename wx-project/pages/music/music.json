@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+	   "i-progress": "/miniprogram_npm/iview-weapp/progress/index"
+  },
+  "navigationBarTitleText": "音乐"
+}
+

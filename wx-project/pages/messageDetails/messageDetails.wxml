@@ -1,0 +1,26 @@
+<view wx:if="{{bool}}">
+	<view wx:for="{{list}}" wx:key="{{index}}">
+		<view class="title">{{item.title}}</view>
+		<view class="date">{{item.date}}</view>
+		<view>
+			<image src="{{item.img}}"></image>
+		</view>
+		<view class="text">{{item.text1}}</view>
+		<view class="text">{{item.text2}}</view>
+		<view class="text">{{item.text3}}</view>
+		<view class="text">{{item.text4}}</view>
+		<view class="text">{{item.text5}}</view>
+		<view class="text">{{item.text6}}</view>
+		<view class="text">{{item.text7}}</view>
+		<view class="text">{{item.text8}}</view>
+		<view class="text">{{item.text9}}</view>
+		<view class="text">{{item.text10}}</view>
+		<view class="text">{{item.text11}}</view>
+		<view class="text">{{item.text12}}</view>
+	</view>
+</view>
+
+<view class="loading" wx:else>
+	<image src="https://languanzhao.github.io/img-for-wxproject/loading.gif" class="loadingImg"></image>
+    <text>{{loadingText}}</text>
+</view>

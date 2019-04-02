@@ -1,0 +1,14 @@
+<view class="message" wx:if="{{bool}}">
+	<view class="container" wx:for="{{list}}" wx:key="{{index}}">
+		<text class="date">{{item.date}}</text>
+		<navigator url="{{'/pages/messageDetails/messageDetails?id='+item.id}}" class="main">
+			<text>{{item.title}}</text>
+			<image src="{{item.img}}"></image>
+		</navigator >	
+	</view>
+</view>
+
+<view class="loading" wx:else>
+	<image src="https://languanzhao.github.io/img-for-wxproject/loading.gif" class="loadingImg"></image>
+    <text>{{loadingText}}</text>
+</view>

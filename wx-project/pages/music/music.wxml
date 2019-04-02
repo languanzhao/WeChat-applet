@@ -1,0 +1,29 @@
+
+<view class="container">
+	<view class="name">{{name1}}</view>
+	<view class="singer">{{singer1}}</view>
+	<audio src="{{src1}}" id="src1"></audio>
+	<button type="primary" bindtap="src1Play">播放</button>
+	<button type="primary" bindtap="src1Pause">暂停</button>
+	<button type="primary" bindtap="src1Time">60秒</button>
+	<button type="primary" bindtap="src1Start">重放</button>
+</view>
+<view class="progress-item">
+    <i-button bindtap="handleReduce1" type="ghost">{{slow}}</i-button>
+    <i-progress percent="{{ percent1 }}" status="{{ status }}"></i-progress>
+    <i-button bindtap="handleAdd1" type="ghost">{{quick}}</i-button>
+</view>
+<view class="container">
+	<view class="name">{{name2}}</view>
+	<view class="singer">{{singer2}}</view>
+	<audio src="{{src2}}" id="src2"></audio>
+	<button type="primary" bindtap="src2Play">播放</button>
+	<button type="primary" bindtap="src2Pause">暂停</button>
+	<button type="primary" bindtap="src2Time">60秒</button>
+	<button type="primary" bindtap="src2Start">重放</button>
+</view>
+<view class="progress-item">
+	<i-button bindtap="handleReduce2" type="ghost">{{slow}}</i-button>
+    <i-progress percent="{{ percent2 }}" status="{{ status }}"></i-progress>
+    <i-button bindtap="handleAdd2" type="ghost">{{quick}}</i-button>
+</view>

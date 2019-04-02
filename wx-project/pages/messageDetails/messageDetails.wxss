@@ -1,0 +1,54 @@
+.title{
+	font-size: 50rpx;
+	width: 600rpx;
+	text-align: center;
+	font-weight: bold;
+	margin: 50rpx auto;
+}
+.date{
+	font-size: 30rpx;
+	color: #999;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	padding: 0 5rpx;
+}
+.date:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1rpx;
+	left: 0;
+	top:50rpx;
+	background: #999;
+}
+image{
+	width: 80%;
+	height: 600rpx;
+	margin: 30rpx auto;
+	display: block;
+}
+.text{
+	padding: 10rpx 30rpx;
+	text-indent: 2em;
+}
+.loading{
+	width: 200rpx;
+	height: 200rpx;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.loadingImg{
+	width:54rpx;
+	height:54rpx;
+	display: block;
+	margin:5rpx auto;
+}
+.loading text{
+	font-size: 30rpx;
+}

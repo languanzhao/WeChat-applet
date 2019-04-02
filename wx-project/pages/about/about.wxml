@@ -1,0 +1,32 @@
+<view class='container' wx:if="{{bool}}">
+	<view class='banner'>
+		<image src='{{aboutSrc}}' mode='aspectFill'></image>
+	</view>
+	<view class='section'>
+		<view class="title">{{info.title}}</view>
+		<view wx:for='{{info.info}}' wx:key='{{index}}'>
+			<text>{{item.label}}：</text>
+			<text>{{item.value}}</text>
+		</view>
+		<view>
+		</view>
+	</view>
+	<view class='section'>
+		<view class="title">{{list.title}}</view>
+		<view wx:for="{{list.list}}" wx:key="{{index}}">
+			<text>{{item.name}}</text>
+			<text class="support">{{item.address}}</text>
+		</view>
+	</view>
+	<view class='section'>
+		<view class="title">{{wxList.title}}</view>
+		<view class="wx">
+			<view wx:for="{{wxList.wxList}}" wx:key="{{index}}"><text>{{index + 1}}.{{item.wx}}</text><text>{{item.cn}}</text></view>
+		</view>
+	</view>
+</view>
+
+<view class="loading" wx:else>
+	<image src="https://languanzhao.github.io/img-for-wxproject/loading.gif" class="loadingImg"></image>
+    <text>{{loadingText}}</text>
+</view>

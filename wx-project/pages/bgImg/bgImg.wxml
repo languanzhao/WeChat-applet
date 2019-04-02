@@ -1,0 +1,13 @@
+
+
+<view wx:if="{{bool}}">
+	<view class="bgImg" wx:for="{{list}}" wx:key="{{index}}" bindtap="chooseImg" data-index="{{index}}">
+		<image src="{{item.src}}"></image>
+		<view>{{item.theme}}</view>
+	</view>
+</view>
+
+<view class="loading" wx:else>
+	<image src="https://languanzhao.github.io/img-for-wxproject/loading.gif" class="loadingImg"></image>
+    <text>{{loadingText}}</text>
+</view>
